@@ -1,17 +1,26 @@
-import { useState } from 'react'
-import './css/App.css';
-import Board from './Board'
-import Players from './Players'
+import { useState } from "react";
+import Board from "./Board";
+import Players from "./Players";
+import './css/App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [reset, setReset] = useState(false)
+  const [winner, setWinner] = useState('')
 
-  return (
-    <div className="App">
-      <Board />
+  const Reset = () => {
+    setReset(true)
+  }
+	return (
+		<div className="App">
+      <div className={`winner ${winner !== "" ? "" : "shrink"}`}>
+        <div className="winner-text">{winner}</div>
+        <button onClick={Reset}>Reset</button>
+      </div>
+      <Board reset={reset} setReset={setReset} 
+        winner={winner} setWinner={setWinner}/>
       <Players />
     </div>
-  )
+	);
 }
 
-export default App
+export default App;
