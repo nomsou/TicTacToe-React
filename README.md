@@ -2,7 +2,7 @@
 
 This is a Tic-Tac-Toe game made with React. It is part of the curriculum for "The Odin Project".
 
-YouTube Ref: https://www.youtube.com/watch?v=ZF4hD1ffitU&t=1892s
+YouTube Ref: https://www.youtube.com/watch?v=OJ_OI_PBu2o
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
