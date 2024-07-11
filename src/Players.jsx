@@ -1,10 +1,11 @@
 import React from 'react'
+import './css/players.css'
 
 const Players = () => {
   return (
     <div className='players'>
-      <div className="player">Player: X</div>
-      <div className="player">Player: 0</div>
+      <div className="player">Player 1: X</div>
+      <div className="player">Player 2: 0</div>
     </div>
   )
 }

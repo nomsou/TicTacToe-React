@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './css/App.css';
 import Board from './Board'
+import Players from './Players'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Board />
+      <Players />
     </div>
   )
 }
